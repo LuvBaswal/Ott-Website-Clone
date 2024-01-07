@@ -1,0 +1,375 @@
+*{
+    margin: 0%;
+    padding:0%;
+    color: white;
+}
+
+//  a{
+//     // color: white;
+//     // text-decoration: none;
+// }
+
+.header{
+    height: 60px;
+    background-color: rgb(6, 6, 6);
+    display: flex;
+    align-items: center;
+    padding: 17px 0px 17px 50px;
+    box-sizing: border-box;
+    justify-content: space-between;
+
+
+    > img{
+        height: 100%;
+    }
+
+    >div{
+        // border: 1px solid red;
+        width: 100%;
+        margin-left: 50px;
+
+        >a{
+            margin: 20px;
+            // font-size: 18px;
+            font-weight:300;
+            text-decoration: none;
+        }
+    }
+
+    >svg{
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        margin-right: 40px;
+
+        &:hover{
+            color: rgb(120, 125, 124);
+        }
+    }
+}
+
+
+.Home{
+    position: relative;
+    min-height: calc(100vh - 250px);
+    overflow-x: hidden;
+    display: block;
+    // padding-left: 15px;
+
+    &:after{
+      background: url(images/home-background.png) center center / cover no-repeat fixed;
+      content: '';
+      position: absolute;
+      inset: 0px;
+      opacity: 1;
+      z-index: -1;
+
+    }
+    
+
+    >h{
+        color: white;
+        
+         }
+}
+
+.Slick{
+    margin-top: 15px;
+    
+    > button{
+        opacity: 0; 
+        height: 100%;
+        width: 70px;
+        padding-right: 15px;
+        padding-left: 10px;
+        z-index: 1;
+
+        &:hover{
+            opacity: 1;
+            transition: opacity 0.2s;
+        }
+
+      
+    }
+   > ul li button{
+    // padding-bottom: 15px;
+        &:before{
+         font-size:10px;
+         color: gray;
+    }
+    
+
+   
+}
+
+    li.slick-active button{
+    color: white;
+   }
+    
+
+   
+ 
+   
+   
+}
+
+.posterimg{
+    
+        position: relative;
+           width: 100%;
+           height: 340px;
+           box-shadow: 10px 10px 10px 10px rgb(6, 6, 6);
+           margin-left: 15px;
+           display: block;
+           margin-right: 5px;
+           
+           
+       >a{
+           position: absolute;
+           width: 100%;
+           height: 100%;
+           box-shadow: 10px 10px 10px 10px rgb(6, 6, 6);
+           
+    
+           >img{
+               width: 98%;
+               height: 340px;
+            //    padding-left: 15px;
+               border: 3px solid rgb(49, 47, 47);
+               border-radius: 10px;
+               
+               
+               
+
+               &:hover{
+                border: 3px solid white;
+                cursor: pointer;
+                transition-duration: 200ms;
+               }
+           }
+          }
+     
+}
+
+
+
+
+.Recommended{
+    margin-left: 15px;
+    margin-top: 40px;
+    
+   
+    // margin-bottom: 100px;
+
+    >div{
+        display:grid;
+        grid-gap:25px;
+        gap : 30px;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        margin-right: 15px;
+        // height: 280px;
+        // padding-bottom: 500px;
+        
+       
+
+        
+    }
+}
+
+.Link{
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 250px;
+    // justify-content: space-between;
+    border: 4px solid rgb(49, 47, 47);
+    box-shadow: 10px 10px 10px 10px rgb(6, 6, 6);
+    transition-duration: 2ms;
+
+    >img{
+        margin-right: 50px;
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 247px;
+        
+
+       
+
+    }
+    &:hover{
+        border: 4px solid rgb(226, 235, 233);
+        transform: scale(1.05);
+        box-shadow: 10px 10px 10px 10px rgb(6, 6, 6);
+        transition-delay: 2ms;
+        cursor: pointer;
+    }
+}
+
+.anime{
+    margin-left: 15px;
+    margin-top: 40px;
+    padding-bottom: 50px;
+    
+   
+    // margin-bottom: 100px;
+
+    >div{
+        display:grid;
+        grid-gap:25px;
+        gap : 30px;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        margin-right: 15px;
+        // height: 280px;
+        // padding-bottom: 500px;
+        
+       
+
+        
+    }
+}
+
+.UriPoster{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: block;
+
+
+    >img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    
+    >h5{
+        display: block;
+        position: relative;
+        top: 410px;
+        left: 30px;
+        
+        
+    }
+    
+}
+
+.UriPoster1{
+    // border: 4px solid rgb(123, 116, 116);
+    position: relative;
+    height: 100px;
+    width: 100px;
+    // display: inline;
+    top: 550px;
+    left: 30px;
+    cursor: pointer;
+    border-radius: 50px;
+   
+
+    >img{
+        display: inline;
+        width: 100%;
+        height: 60px;
+        position: absolute;
+        border-radius: 50px;
+        border: 4px solid rgb(242, 238, 238);
+        // background-color: red;
+        box-shadow: 1px 1px 1px 1px rgb(6, 6, 6);
+
+        
+        
+    }
+
+    >:hover{
+        border: 4px solid rgb(123, 116, 116);
+        background-color: rgb(123, 116, 116);
+        transform: scale(1.2);
+    }
+
+    
+}
+
+.UriPoster2{
+    // border: 4px solid rgb(123, 116, 116);
+    position: relative;
+    height: 60px;
+    width: 100px;
+    // display: inline;
+    top: 450px;
+    left: 160px;
+    cursor: pointer;
+    border-radius: 50px;
+    
+    >p{
+        display: flex;
+        width: 100%;
+        height: 60px;
+        position: absolute;
+        border-radius: 50px;
+        border: 4px solid rgb(242, 238, 238);
+        background-color: rgb(123, 116, 116);
+        box-shadow: 1px 1px 1px 1px rgb(6, 6, 6);
+        align-items: center;
+        justify-content: center;
+
+        
+        
+    }
+
+    
+
+    >:hover{
+        border: 4px solid rgb(123, 116, 116);
+        background-color: rgb(242, 238, 238);
+        transform: scale(1.2);
+        color: black;
+    }
+
+    
+}
+
+.UriPoster3{
+    // border: 4px solid rgb(123, 116, 116);
+    position: relative;
+    height: 60px;
+    width: 100px;
+    // display: inline;
+    top: 390px;
+    left: 290px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 4px solid rgb(242, 238, 238);
+    background-color: rgb(123, 116, 116);
+    box-shadow: 1px 1px 1px 1px rgb(6, 6, 6);
+    
+    
+    >p{
+        display: flex;
+        width: 100%;
+        height: 60px;
+        position: absolute;
+        border-radius: 50px;
+        
+        align-items: center;
+        justify-content: center;
+        
+
+        
+        
+    }
+
+    
+
+    
+
+    
+
+    >:hover{
+        border: 4px solid rgb(123, 116, 116);
+        background-color: rgb(242, 238, 238);
+        transform: scale(1.2);
+        color: black;
+    }
+
+    
+}
